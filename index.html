@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./js/script.js"></script>
+</head>
+<body>
+	<div class="headerfixed">
+	<div class="header">
+		<div class="wrapper">
+			<a href="#"><span class="fa fa-twitter" style="font-size:45px;color:rgba(59, 185, 235, 0.973);"></span> </a>
+			<form id="searching">
+			  <input type="text" name="search" placeholder="Search.." id="search">
+			</form>
+		</div>
+	</div>
+	</div>
+	<div class="content">
+		<div class="wrapper">
+			<div class="leftfixed">
+				<div class="sidebarleft">
+                    <ul>
+	                    <li><a href="#"><i class="material-icons"style="font-size:28px;">home</i>Home</a></li>
+						<li><a href="#"><i class="fa fa-hashtag"style="font-size:28px;"></i>Explore</a></li>
+						<li><a href="#"><i class="material-icons"style="font-size:28px;">notifications_none</i>Notifications</a></li>
+						<li><a href="#"><i class="material-icons"style="font-size:28px;">message</i>Messages</a></li>
+						<li><a href="#"><i class="fa fa-bookmark-o"style="font-size:28px;"></i>Bookmarks</a></li>
+						<li><a href="#"><i class="material-icons"style="font-size:28px;">format_list_bulleted</i>Lists</a></li>
+						<li><a href="#"><i class="material-icons"style="font-size:28px;">person_outline</i>Profile</a></li>
+						<button type="button" value="Tweet" style="  margin-left: 20px;  padding: 16px 65px;">Tweet</button>
+					</ul>
+				</div>
+			</div>
+			<div class="mainnotfixed" id="mainnotfixed">
+				<div class="main mainpost" style="margin-bottom:20px; padding-bottom:10px;">	
+					<div class="userimg"><img src="upload.png"/>
+						</div>
+					    <div class="username">				
+							<p class="name" style="top:15px;">Ameer Eyad</p>
+					    </div>
+						<p class="quotes">
+							<textarea id="mypara" placeholder="What's happening?"></textarea>
+						</p>
+						<div class="postbar">
+							<button type="button" id="postmypost" class="postmypost" onclick="mypost();">Tweet</button>
+						</div>
+			    </div>
+				<hr>
+				<div class="allpost">
+					<div class="mainpost">
+						<div class="userimg"><img src="upload.png"/>
+						</div>
+					    <div class="username">				 
+							<p class="name">Ameer Eyad</p>
+					    </div>
+						<p class="quotes" id="quotes1">
+							Welcome to our society. You will be judged on what you wear, which music you listen to, what you look like, how you act, who you hang around with, and on practically every other personal trait and imperfection about you, and you'll be made fun of for being who you are. Enjoy your stay.
+						</p>
+						<div class="likedislike">
+							<span id="heart" class="fa fa-heart" onclick="redheart('heart');"></span> 
+							<span id="retweet" class="fa fa-retweet" onclick="greenretweet('retweet','quotes1');"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightfixed">
+				<div class="sidebarright">
+					<div class="rightcontent">
+						<img src="other_profile.png"/>
+						<p class="name">User Name</p>
+						<a href="#" id="connect1">&#x271A; Connect</a>
+					</div>
+					<div class="rightcontent">
+						<img src="other_profile.png"/>
+						<p class="name">User Name</p>
+						<a href="#" id="connect2">&#x271A; Connect</a>
+					</div>
+					<div class="rightcontent">
+						<img src="other_profile.png"/>
+						<p class="name">User Name</p>
+						<a href="#" id="connect3" >&#x271A; Connect</a>
+					</div>
+					<div class="rightcontent">
+						<img src="other_profile.png"/>
+						<p class="name">User Name</p>
+						<a href="#" id="connect4">&#x271A; Connect</a>
+					</div>
+					<div class="rightcontent">
+						<img src="other_profile.png"/>
+						<p class="name">User Name</p>
+						<a href="#" id="connect5">&#x271A; Connect</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
